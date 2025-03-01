@@ -345,7 +345,7 @@ button.down.hidden {
 .mm-survey-container {
   justify-self: center;
 	width: 50%;
-	min-height: 600px;
+	min-height: 300px;
 	/* background: #fafafa; */
 }
 
