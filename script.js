@@ -267,9 +267,13 @@ function validateName() {
         timButton.style.display = 'none';
     } else {
         if (fullName.toLowerCase() === "mr. timabundinn") {
+            // console.log(fullName);
             timButton.style.display = 'inline-block';
+            submitButton.style.display = 'none';
         } else {
+            console.log(fullName);
             submitButton.style.display = 'inline-block';
+            timButton.style.display = 'none';
         }
     }
 }
@@ -281,5 +285,5 @@ fullNameInput.addEventListener('input', validateName);
 document.getElementById("closeBtn").addEventListener("click", function() {
     // Try to close the current tab
     window.close();
-  });
+});
 
