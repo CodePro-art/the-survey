@@ -49,7 +49,7 @@ body {
   position: relative;
   left: calc(20px * -0.5);
   top: calc(20px * -0.5);
-  /* overflow: hidden; */
+  overflow: hidden;
   z-index: 1;
   filter: blur(5px);
 }
