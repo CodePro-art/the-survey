@@ -15,6 +15,7 @@
 *:after {
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
 }
 html,
 body {
