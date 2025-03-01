@@ -174,9 +174,9 @@ button {
   width: 100%;
   text-align: center;
   z-index: 1;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   position: absolute;
   padding: 20px;
   opacity: 0;
@@ -380,8 +380,6 @@ button.down.hidden {
     padding: 12px 14px;
 }
 
-
-
 .mm-back-btn {
     width: 100%;
 }
@@ -431,7 +429,7 @@ button.down.hidden {
   align-self: center;
   justify-self: center;
 	width: 50%;
-	height: 30px;
+	height: 10px;
 	background: #f5f5f5;
 	overflow: hidden;
 }
@@ -441,9 +439,9 @@ button.down.hidden {
 }
 
 .mm-survey-progress-bar {
-	height: 30px;
-    width: 0%;
-    background: linear-gradient(to left, #4CB8C4, #3CD3AD);
+	height: 10px;
+  width: 0%;
+  background: linear-gradient(to left, #4CB8C4, #3CD3AD);
 }
 
 .mm-survey-q {
