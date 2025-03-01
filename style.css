@@ -26,7 +26,7 @@ body {
 }
 html {
   height: 100vh;
-  overflow: hidden;
+  overflow:scroll;
   font-size: 24px;
 }
 @media screen and (min-width: 800px) {
@@ -49,7 +49,7 @@ body {
   position: relative;
   left: calc(20px * -0.5);
   top: calc(20px * -0.5);
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 1;
   filter: blur(5px);
 }
