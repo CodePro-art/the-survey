@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Firewatch Intro</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="bg hidden"></div>
+    </div>
+
+    <div class="slide dialogue hidden" data-slide="0">
+        <p class="caps">PRIEL COHANIM</p>
+        <p class="smallcaps orange">PRESENTS</p>
+    </div>
+
+    <div class="slide dialogue hidden" data-slide="1">
+        <p class="smallcaps orange">AN INNOVATIVE COURSE EXPERIENCE</p>
+    </div>
+
+    <div class="slide dialogue hidden" data-slide="2" data-bg="1">
+        <p class="caps">INTERACTIVITY IN FICTION</p>
+    </div>
+
+    <div class="slide dialogue" data-slide="3">
+        <form id="nameForm" class="nameForm">
+            <label for="fullName">Please enter your full name first:</label>
+            <br>
+            <br>
+            <input type="text" id="fullName" placeholder="Your Name" required value="">
+            <span id="error-message" class="error"></span><br><br>
+            <button class="next-slide-btn" data-slide="4" type="submit" id="submitButton" style="display: none;">Submit</button>
+            <button class="next-slide-btn" data-slide="8" type="submit" id="timButton" style="display: none;">Submit</button>
+        </form>
+    </div>
+
+    <div class="slide dialogue hidden" data-slide="4">
+        <p>Hello there, young student!</p>
+        <p>We, here at the "<b>P</b>riel <b>C</b>ohanim <b>C</b>orporation for <b>F</b>un <b>C</b>ourses" (also known as PCCFC), <br>would like to officially welcome you to "Interactivity in Fiction"—the latest addition to our ever-expanding collection of elective courses.</p>
+        <button class="hidden up next-slide-btn" data-slide="5">Next</button>
+    </div>
+
+    <div class="slide dialogue hidden choice" data-slide="5">
+        <p>"Interactivity in Fiction" is a unique course that allows students to determine the course contents,<br> including the topics taught and the primary and secondary sources discussed in class. </p>
+        <p>To provide such a service for our students, we use a state-of-the-art, incredibly complicated,<br> and not-at-all-easy-to-comprehend system called "The Survey."</p>
+        <div class="decision-wrap">
+            <button class="hidden left next-slide-btn" data-type="pretty" data-pretty-answer="Very nice." data-slide="6">Continue</button>
+        </div>
+    </div>
+
+    <div class="slide dialogue hidden" data-slide="6">
+        <p>"The Survey" identifies students' interests and motivations by collecting their <br>answers to simple questions.</p>
+        <p>Then, our talented staff of engineers—which includes a psychologist, a monkey with a top hat,<br>and that weird Linguistics teacher you know—analyzes these answers to produce a course<br> experience individually tailored to each student and to the class.</p>
+        <button class="hidden up next-slide-btn" data-slide="7">Next</button>
+    </div>
+    
+    <div class="slide dialogue hidden" data-slide="7">
+        <p>We ask that you take 5 minutes of your time to fill in "The Survey." </p>
+        <p>Please answer the following questions sincerely, so our system can accurately predict <br>and assign activities best suited for you and your course experience.</p>
+        <p style="font-size: 20px; color: gray"><i>Note that our system automatically discards submissions that include inappropriate or disrespectful language. <br>Participants who submit such answers will be excluded from the personalization process and will not receive a course guide or accompanying material.</i></p>
+        <button class="hidden up next-slide-btn" data-slide="9">START</button>
+    </div>
+
+    <div class="slide dialogue hidden tim" data-slide="8" style="background: black;">
+        <p class="caps">Welcome Mr. Timabundinn</p>
+        <p class="smallcaps"><a id="tim-link" class="tim-link" href="parchment.html">click here</a></p>
+        <button class="hidden up next-slide-btn" data-slide="5" style="display: none;">Next</button>
+    </div>
+
+    <div class="slide interval hidden" data-slide="9" data-bg="2"></div>
+
+    <div class="slide dialogue hidden" data-slide="10">
+        <p class="caps">THE SURVEY</p>
+        <!-- partial:index.partial.html -->
+		<div class="container">
+			<div class="col-sm-12">
+				<div class="mm-survey">
+					
+					<div class="mm-survey-progress">
+						<div class="mm-survey-progress-bar mm-progress"></div>
+					</div>
+
+					<div class="mm-survey-results">
+						<div class="mm-survey-results-container">
+							<h3 class="mm-survey-results-score">Thank you for completing the survey!</h3>
+                            <p>We appreciate your time and valuable input. Your responses are important and will help us improve our processes and better understand your needs.</p>
+                            <p>If you have any further questions or would like to provide additional feedback, feel free to reach out to us.</p>
+                            <p>Have a great day!</p>
+							<ul class="mm-survey-results-list"></ul>
+						</div>
+						<div class="mm-survey-results-controller">
+							<div class="mm-close-btn">
+								<button id="closeBtn">Close</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="mm-survey-bottom">
+						<div class="mm-survey-container">
+
+							<div class="mm-survey-page active" data-page="1">
+								<div class="mm-survey-content">
+									<div class="mm-survey-question">
+										<p>Your favorite color scheme is?</p>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio01" data-item="1" name="radio1" value="Cold colors like blue, purple, or gray." />
+										<label for="radio01"><p>Cold colors like blue, purple, or gray.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio02" data-item="1" name="radio1" value="Warm colors like red, yellow, or pink." />
+										<label for="radio02"><p>Warm colors like red, yellow, or pink.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio03" data-item="1" name="radio1" value="Anything with fuchsia in it (don't be that person)." />
+										<label for="radio03"><p>Anything with fuchsia in it (don't be that person).</p></label>
+									</div>
+								</div>
+							</div>
+                            <div class="mm-survey-page" data-page="2">
+								<div class="mm-survey-content">
+									<div class="mm-survey-question">
+										<p>Your favorite poet is:</p>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio04" data-item="2" name="radio2" value="William Shakespeare" />
+										<label for="radio04"><p>William Shakespeare</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio05" data-item="2" name="radio2" value="Emily Dickinson" />
+										<label for="radio05"><p>Emily Dickinson</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio06" data-item="2" name="radio2" value="Taylor Swift" />
+										<label for="radio06"><p>Taylor Swift</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio07" data-item="2" name="radio2" value="Donald J. Trump" />
+										<label for="radio07"><p>Donald J. Trump</p></label>
+									</div>
+								</div>
+							</div>
+							<div class="mm-survey-page" data-page="3">
+								<div class="mm-survey-content">
+									<div class="mm-survey-question">
+										<p>You walk into your friend's house and see them sitting with a bunch of people playing video games. You:</p>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio08" data-item="3" name="radio3" value="Sit next to them and watch them play." />
+										<label for="radio08"><p>Sit next to them and watch them play.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio09" data-item="3" name="radio3" value="Ask someone to hand you a remote controller." />
+										<label for="radio09"><p>Ask someone to hand you a remote controller.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio10" data-item="3" name="radio3" value="Turn around and leave." />
+										<label for="radio10"><p>Turn around and leave.</p></label>
+									</div>
+								</div>
+							</div>
+							<div class="mm-survey-page" data-page="4">
+								<div class="mm-survey-content">
+									<div class="mm-survey-question">
+										<p>You find yourself standing in front of several bookshelves in your apartment. You reach out and take:</p>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio11" data-item="4" name="radio4" value="Your heavily annotated copy of Pride and Prejudice." />
+										<label for="radio11"><p>Your heavily annotated copy of <i>Pride and Prejudice</i>.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio12" data-item="4" name="radio4" value="An anthology of short stories." />
+										<label for="radio12"><p>An anthology of short stories.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio13" data-item="4" name="radio4" value="A comic book." />
+										<label for="radio13"><p>A comic book.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio14" data-item="4" name="radio4" value="The TV remote; time for some Netflix!" />
+										<label for="radio14"><p>The TV remote; time for some Netflix!</p></label>
+									</div>
+								</div>
+							</div>
+							<div class="mm-survey-page" data-page="5">
+								<div class="mm-survey-content">
+									<div class="mm-survey-question">
+										<p>It's afternoon and three of your friends are texting you. The first invites you to a social evening indoors, playing <i>Settlers of Catan</i> with some of your friends. The second asks if you'd like to join them for a cup of coffee (or another less disgusting drink) to talk about today's <i>Literary Theory</i> class. The third reminds you that a foreign movie is screening tonight on campus. You:</p>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio15" data-item="5" name="radio5" value="Join the first friend to play Catan." />
+										<label for="radio15"><p>Join the first friend to play <i>Catan</i>.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio16" data-item="5" name="radio5" value="Join the second friend to talk about literature and history." />
+										<label for="radio16"><p>Join the second friend to talk about literature and history.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio17" data-item="5" name="radio5" value="Join the third friend to watch a movie." />
+										<label for="radio17"><p>Join the third friend to watch a movie.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio18" data-item="5" name="radio5" value="Stay at home and re-read some of your favorite books." />
+										<label for="radio18"><p>Stay at home and re-read some of your favorite books.</p></label>
+									</div>
+								</div>
+							</div>
+							<div class="mm-survey-page" data-page="6">
+								<div class="mm-survey-content">
+									<div class="mm-survey-question">
+										<p>Come to think of it, your favorite books usually involve:</p>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio19" data-item="6" name="radio6" value="Drama and romantic relationships." />
+										<label for="radio19"><p>Drama and romantic relationships.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio20" data-item="6" name="radio6" value="Philosophical discussions or thought-provoking questions." />
+										<label for="radio20"><p>Philosophical discussions or thought-provoking questions.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio21" data-item="6" name="radio6" value="Suspense and mystery." />
+										<label for="radio21"><p>Suspense and mystery.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio22" data-item="6" name="radio6" value="Adventure and action." />
+										<label for="radio22"><p>Adventure and action.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio23" data-item="6" name="radio6" value="Mostly factual or scientific information." />
+										<label for="radio23"><p>Mostly factual or scientific information.</p></label>
+									</div>
+								</div>
+							</div>
+							<div class="mm-survey-page" data-page="7">
+								<div class="mm-survey-content">
+									<div class="mm-survey-question">
+										<p>Finally, looking back at the questions you've answered right now, would you say that:</p>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio24" data-item="7" name="radio7" value="You enjoy making decisions." />
+										<label for="radio24"><p>You enjoy making decisions.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio25" data-item="7" name="radio7" value="You prefer watching someone else making decisions for you." />
+										<label for="radio25"><p>You prefer watching someone else making decisions for you.</p></label>
+									</div>
+									<div class="mm-survey-item">
+										<input type="radio" id="radio26" data-item="7" name="radio7" value="Choice is an illusion." />
+										<label for="radio26"><p>Choice is an illusion.</p></label>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+						<div class="mm-survey-controller">
+							<div class="mm-prev-btn">
+								<button class="prev-next-btn">BACK</button>
+							</div>
+							<div class="mm-next-btn">
+								<button disabled="true" class="prev-next-btn">NEXT</button>
+							</div>
+							<div class="mm-finish-btn">
+								<button class="prev-next-btn ">Submit</button>
+							</div>
+							<form id="surveyForm" action="https://formsubmit.co/78deab8e801995a6c1c596003500066b" method="POST" target="_blank" style="visibility: hidden;">
+								<input type="text" name="name" id="name" value="" autocomplete="name">
+								<input type="hidden" name="message" id="message" value="">
+                                <input type="hidden" name="_captcha" value="false">
+								<button type="submit">Submit</button>
+							</form>
+
+                            <p id="responseMessage" style="display: none; color: green;">Form submitted successfully!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script  src="./script.js"></script>
+    <script  src="./survey.js"></script>
+
+</body>
+</html>
