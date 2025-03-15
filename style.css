@@ -572,6 +572,7 @@ button {
   text-shadow: inherit;
   transition: opacity 2s, left 2s, right 2s, top 2s, bottom 2s;
 }
+
 button.hidden {
   opacity: 0;
 }

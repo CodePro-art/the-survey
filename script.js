@@ -81,7 +81,7 @@ function slideShow() {
             // if there are links
             } else {
                 // for each link remove the hidden class so it can fade in with css
-                slides[currentSlide].querySelectorAll("button").forEach(function (slideLink) {
+                slides[currentSlide].querySelectorAll("button","p").forEach(function (slideLink) {
                     slideLink.classList.remove("hidden");
                 });
 
