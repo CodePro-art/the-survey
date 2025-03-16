@@ -708,7 +708,6 @@ button.down.hidden {
 }
 
 .mm-prev-btn {
-
     position: relative;
     float: left;
 }
@@ -718,6 +717,13 @@ button.down.hidden {
     position: relative;
     float: right;
 }
+
+/* .next-slide-btn {
+  background: #3DD2AF !important;
+  color: #fff;
+  padding: 8px 18px;
+  font-weight: 300;
+} */
 
 .mm-finish-btn {
 	display: none;
@@ -762,7 +768,7 @@ button.down.hidden {
 }
 
 .mm-survey-progress-bar {
-	height: 10px;
+	height: 15px;
   width: 0%;
   background: linear-gradient(to left, #4CB8C4, #3CD3AD);
 }
