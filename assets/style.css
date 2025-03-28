@@ -664,6 +664,10 @@ button.down.hidden {
 	margin-bottom: 50px;
 }
 
+.container {
+  width: 70%;
+  justify-self: center;
+}
 .mm-survey-container {
   justify-self: center;
 	width: 50%;
